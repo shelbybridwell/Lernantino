@@ -1,3 +1,4 @@
+/*Universal*/
 *{
   margin: 0;
   padding: 0;
@@ -5,19 +6,18 @@
 
 .main {
   margin-left: 0px;
-  padding: 0px 10px;
+  padding: 10px 0px;
 }
 
 body {
   position: relative;
-  font-family: "Times", sans-serif;
-  font-size: 15px;
-  background-color: white;
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
+  background-color: darkgrey;
   color: black;
 }
-main {
-  padding: 60px 0;
-}
+
+ /* Class Selectors */
 
 li {
   display: inline;
@@ -26,185 +26,14 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: underline;
 }
+
 h1,
-h2 {
-  margin: 0px
-}
 h2{
   text-align: left;
 }
 
-header,
-  footer {
-    height: 60px;
-    width: 100%;
-    line-height: 60px;
-    background-color: grey;
-  }
-  
-  header {
-    position: fixed;
-    border-bottom: 5px solid grey;
-    border-top: 5px solid grey;
-  }
-  .about {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    background-color: blue;
-    background-size: cover;
-    background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-
-.work {
-  height: 200px;
-  width: 100%;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  background-color: blue;
-  background-size: cover;
-  background-position: center;
-}
-
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
-}
-
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.flex-container {
-  display: flex;
-  align-items: baseline;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-  
-  footer {
-    position: absolute;
-    margin-top: 0;
-    bottom: 0;
-    border-bottom: 5px solid black;
-    border-top: black solid 5px;
-    color: black;   
-  }
-  figure {
-    margin-bottom: 40px;
-  }
-  
-  img {
-    display: block;
-    margin: 20px auto;
-    border: 10px solid black;
-  }
-  
-  section {
-    margin-bottom: 0;
-    padding: 20px 10px 40px 10px;
-    border-top: 3px solid black;
-    background-color:  white;
-  }
-  
-  form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    padding: 10px;
-    border: 5px solid black;
-    border-radius: 20px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100px;
-  }
-    
-  input, 
-  textarea {
-    box-sizing: border-box;
-    width: 300px;
-    border: 1px solid grey;
-  }
-  
-  textarea {
-    vertical-align: top;
-    height: 60px;
-  }
-    
- 
-   
-  /* Class Selectors */
   .text-center {
     text-align: center;
   }
@@ -212,3 +41,92 @@ header,
   .text-right {
     text-align: right;
   }
+
+/*Header*/
+
+header {
+    height: 30px;
+    width: 130px;
+    line-height: 30px;
+    text-align: left;
+    background-color: lightblue;
+    position: absolute;
+    border-bottom: 5px solid lightblue;
+    border-top: 5px solid lightblue;
+    border-left: 45px solid lightblue;
+  }
+
+  /*About Section*/
+
+.about {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Work Section*/
+
+.work {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.flex-container > div {
+  background-color: lightblue;
+  color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+}
+
+  /*Contact Me Section*/
+
+  section {
+    margin-bottom: 0;
+    padding: 20px 10px 90px 10px;
+    border-top: 3px ;
+    background-color:  white;
+  }
+  
+  .contact {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+   /*Footer */
+
+  footer {
+    position: absolute;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 0;
+    bottom: 0;
+    border-bottom: 5px solid black;
+    border-top: black solid 5px;
+  }
+
