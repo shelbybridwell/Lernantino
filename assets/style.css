@@ -75,6 +75,8 @@ header,
     display: inline-block;
     margin-left: 20px;
 }
+
+
 .work {
   height: 200px;
   width: 100%;
@@ -99,6 +101,21 @@ header,
   width: 75%;
   display: inline-block;
   margin-left: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
   
   footer {
