@@ -4,16 +4,13 @@
   padding: 0;
 }
 
-.main {
-  margin-left: 0px;
-  padding: 10px 0px;
-}
+
 
 body {
   position: relative;
   font-family: "Helvetica", sans-serif;
-  font-size: 12px;
-  background-color: darkgrey;
+  font-size: 15px;
+  background-color: white;
   color: black;
 }
 
@@ -55,6 +52,31 @@ header {
     border-top: 5px solid lightblue;
     border-left: 45px solid lightblue;
   }
+  /* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 10%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 90%;
+  background-color: white;
+
+}
+
 
   /*About Section*/
 
@@ -107,7 +129,6 @@ header {
     border-top: 3px ;
     background-color:  white;
   }
-  
   .contact {
     height: 200px;
     width: 100%;
@@ -129,3 +150,9 @@ header {
     border-bottom: 5px solid black;
     border-top: black solid 5px;
   }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
