@@ -144,30 +144,35 @@ header {
 
 .item-one {
   padding:2px;
+  display: flex;
   flex-wrap:wrap;
   border: 2px solid black
 }
 
 .item-two {
   padding:2px;
+  display: flex;
   flex-wrap:wrap;
   border: 2px solid black
 }
 
 .item-three {
   padding:2px;
+  display: flex;
   flex-wrap:wrap;
   border: 2px solid black
 }
 
 .item-four {
-  padding:0;
+  padding:2px;
+  display: flex;
   flex-wrap:wrap;
   border: 2px solid black
 }
 
 .item-five {
   padding:2px;
+  display: flex;
   flex-wrap:wrap;
   border: 2px solid black
 }
