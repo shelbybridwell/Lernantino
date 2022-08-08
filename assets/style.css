@@ -38,13 +38,13 @@ h2{
   text-align: left;
 }
 
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
 
 /*Header*/
 
@@ -59,7 +59,7 @@ header {
     border-top: 5px solid lightblue;
     border-left: 45px solid lightblue;
   }
-  
+
   /* Column container */
 .row {  
   display: flex;
@@ -85,8 +85,9 @@ header {
 
 }
 .verticalLine {
-  height: 100px;
+  height: 200px;
   border-right: 3px solid darkblue;
+  position:sticky;
 }
 
   /*About Section*/
