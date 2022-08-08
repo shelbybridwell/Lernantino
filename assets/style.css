@@ -59,6 +59,7 @@ header {
     border-top: 5px solid lightblue;
     border-left: 45px solid lightblue;
   }
+  
   /* Column container */
 .row {  
   display: flex;
@@ -83,7 +84,10 @@ header {
   background-color: white;
 
 }
-
+.verticalLine {
+  height: 100px;
+  border-right: 3px solid darkblue;
+}
 
   /*About Section*/
 
@@ -109,14 +113,14 @@ header {
   background-position: center;
 }
 
-.flex-container {
+.flex-container-large {
   display: flex;
   background-color: white;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-items: stretch;;
 }
 
 
@@ -132,12 +136,15 @@ header {
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
+  border:1px solid black
+ 
 }
 
 
 .item {
   align-items: flex-end;
 }
+
 
   /*Contact Me Section*/
 
