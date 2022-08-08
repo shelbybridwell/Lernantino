@@ -128,7 +128,6 @@ header {
 
 
 .flex-container-medium {
-  background-color: lightblue;
   color: black;
   width: 100px;
   margin: 10px;
@@ -139,15 +138,39 @@ header {
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
-  border:1px solid black
+ 
  
 }
 
-
-.item {
-  align-items: flex-end;
+.item-one {
+  padding:2px;
+  flex-wrap:wrap;
+  border: 2px solid black
 }
 
+.item-two {
+  padding:2px;
+  flex-wrap:wrap;
+  border: 2px solid black
+}
+
+.item-three {
+  padding:2px;
+  flex-wrap:wrap;
+  border: 2px solid black
+}
+
+.item-four {
+  padding:0;
+  flex-wrap:wrap;
+  border: 2px solid black
+}
+
+.item-five {
+  padding:2px;
+  flex-wrap:wrap;
+  border: 2px solid black
+}
 
   /*Contact Me Section*/
 
