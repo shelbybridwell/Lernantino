@@ -180,12 +180,7 @@ header {
 
   /*Contact Me Section*/
 
-  section {
-    margin-bottom: 0;
-    padding: 20px 10px 90px 10px;
-    border-top: 3px ;
-    background-color:  white;
-  }
+
   .contact {
     height: 200px;
     width: 100%;
