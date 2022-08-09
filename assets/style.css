@@ -12,7 +12,6 @@ body {
   font-size: 15px;
   background-color: white;
   color: black;
-  padding:10px;
 }
 
  /* Class Selectors */
@@ -33,6 +32,7 @@ h1{
   position: relative;;
 
 }
+
 
 h1,
 h2{
@@ -76,14 +76,14 @@ header {
 .side {
   flex: 20%;
   background-color: white;
-  padding: 20px;
+  padding: 2px;
 }
 
 /* Main column */
 .main {
   flex: 70%;
   background-color: white;
-  padding:10px;
+  padding:1px;
 
 }
 .verticalLine {
@@ -98,32 +98,35 @@ header {
     height: 200px;
     width: 100%;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 50px;
     background-color: white;
     background-size: cover;
     background-position: center;
+    padding-left: 10px;
 }
 
 /*Work Section*/
 
 .work {
-  height: 200px;
+  height: 300px;
   width: 100%;
   margin-bottom: 0px;
   margin-top: 0px;
   background-color: white;
   background-size: cover;
   background-position: center;
+
 }
 
 .flex-container-large {
-  display: flex;
+  display: grid;
   background-color: white;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-evenly;
   align-items: stretch;
+
 }
 
 
@@ -181,26 +184,26 @@ header {
   /*Contact Me Section*/
 
 
-  .contact {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
+.contact {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 2px;
+  margin-top: 25px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
   }
 
    /*Footer */
 
-  footer {
-    position: absolute;
-    width: 100%;
-    background-color: lightblue;
-    margin-top: 0;
-    bottom: 0;
-    border-bottom: 5px solid black;
-    border-top: black solid 5px;
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 5px solid black;
+  border-top: black solid 5px;
   }
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
